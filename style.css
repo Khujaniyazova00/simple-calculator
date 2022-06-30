@@ -56,22 +56,13 @@ value {
 
 .calculator span.off {
   background-color: red;
-  /* height: 25px;
-    width: 60px; */
-  /* align-self: center; */
 }
 
 .calculator span.clear {
-  /* height: 25px;
-    width: 60px; */
-  /* align-self: center; */
   background: rgb(119, 238, 119);
 }
 
 .calculator span.x {
-  /* height: 25px;
-    width: 60px; */
-  /* align-self: center; */
   background-color: rgb(253, 221, 94);
   grid-column: 3 / 5;
 }
