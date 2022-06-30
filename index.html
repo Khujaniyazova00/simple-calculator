@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1</title>
+    <link rel="stylesheet" href="./task1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="calculator" name="calculator">
+        <input
+          type="text"
+          class="value"
+          name="txt"
+          readonly=""
+          placeholder="0"
+        />
+        <span class="num off" onclick="calculator.txt.value+=''">On/Off</span>
+        <span class="num clear" onclick="calculator.txt.value=''">Clear</span>
+        <span class="num x" onclick="calculator.txt.value+='<-'"><-BackSpace</span>
+        <span class="num" onclick="calculator.txt.value+='7'">7</span>
+        <span class="num" onclick="calculator.txt.value+='8'">8</span>
+        <span class="num" onclick="calculator.txt.value+='9'">9</span>
+        <span class="num plus" onclick="calculator.txt.value+='+'">+</span>
+        <span class="num" onclick="calculator.txt.value+='4'">4</span>
+        <span class="num" onclick="calculator.txt.value+='5'">5</span>
+        <span class="num" onclick="calculator.txt.value+='6'">6</span>
+        <span class="num" onclick="calculator.txt.value+='-'">-</span>
+        <span class="num" onclick="calculator.txt.value+='1'">1</span>
+        <span class="num" onclick="calculator.txt.value+='2'">2</span>
+        <span class="num" onclick="calculator.txt.value+='3'">3</span>
+        <span class="num" onclick="calculator.txt.value+='×'">×</span>
+        <span class="num" onclick="calculator.txt.value+='.'">.</span>
+        <span class="num" onclick="calculator.txt.value+='0'">0</span>
+        <span class="num" onclick="calculator.txt.value+='±'">±</span>
+        <span class="num" onclick="calculator.txt.value+='÷'">÷</span>
+        <span
+          class="num equal"
+          onclick="calculator.txt.value+=eval(calculator.txt.value)"
+          >=</span
+        >
+        <span class="num" onclick="calculator.txt.value+='()'">()</span>
+      </form>
+    </div>
+  </body>
+</html>

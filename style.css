@@ -1,0 +1,92 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  min-width: 280px;
+  height: 380px;
+  background: bisque;
+  padding: 30px;
+  border-radius: 21px;
+}
+
+input,
+value {
+  background: ivory;
+  border-radius: 10%;
+}
+
+.calculator {
+  display: grid;
+  height: 350px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: repeat(7, auto);
+  row-gap: 15px;
+  column-gap: 15px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.calculator .value {
+  /* position: relative; */
+  grid-column: span 4;
+  /* height: 100px;
+    margin: 8px 4px; */
+  text-align: right;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.calculator span {
+  display: grid;
+  /* width: 60px;
+    height: 60px;
+    margin: 6px; */
+  background: lightgrey;
+  place-items: center;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 10%;
+}
+
+.calculator span.off {
+  background-color: red;
+  /* height: 25px;
+    width: 60px; */
+  /* align-self: center; */
+}
+
+.calculator span.clear {
+  /* height: 25px;
+    width: 60px; */
+  /* align-self: center; */
+  background: rgb(119, 238, 119);
+}
+
+.calculator span.x {
+  /* height: 25px;
+    width: 60px; */
+  /* align-self: center; */
+  background-color: rgb(253, 221, 94);
+  grid-column: 3 / 5;
+}
+
+.calculator span.equal {
+  grid-column: 1 / 4;
+}
+
+.calculator span:hover {
+  cursor: pointer;
+  background-color: lightgrey;
+}
