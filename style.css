@@ -38,10 +38,7 @@ value {
 }
 
 .calculator .value {
-  /* position: relative; */
   grid-column: span 4;
-  /* height: 100px;
-    margin: 8px 4px; */
   text-align: right;
   border: none;
   outline: none;
@@ -51,9 +48,6 @@ value {
 
 .calculator span {
   display: grid;
-  /* width: 60px;
-    height: 60px;
-    margin: 6px; */
   background: lightgrey;
   place-items: center;
   border: 1px solid rgba(0, 0, 0, 1);
